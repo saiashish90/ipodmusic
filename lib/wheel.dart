@@ -20,7 +20,7 @@ class _WheelState extends State<Wheel> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(_movement > 0 ? 'Clockwise' : 'Counter-Clockwise', style: Theme.of(context).textTheme.display1,),
+          Text(_movement > 0 ? 'Clockwise' : 'Counter-Clockwise', style: Theme.of(context).textTheme.headline4),
           Text('$_movement'),
           GestureDetector(
           onPanUpdate: _panHandler,
